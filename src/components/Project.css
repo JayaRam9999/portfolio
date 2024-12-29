@@ -1,0 +1,105 @@
+/* General Reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .project-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .project-title {
+    font-size: 3rem;
+    color: #0a0a23;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .project-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  .project-box {
+    width: 300px;
+    background: #ffffff;
+    border: 2px solid #00ff88;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .project-title-text {
+    font-size: 1.5rem;
+    color: #0a0a23;
+    margin: 15px 0 10px;
+    font-weight: bold;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* For screens smaller than 768px (Tablets) */
+  @media (max-width: 768px) {
+    .project-title {
+      font-size: 2.5rem;
+    }
+  
+    .project-boxes {
+      flex-direction: column; /* Stack projects vertically */
+      gap: 20px;
+    }
+  
+    .project-box {
+      width: 90%; /* Make the project boxes take up most of the width */
+      margin: 0 auto;
+    }
+  
+    .project-description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* For screens smaller than 480px (Mobile Devices) */
+  @media (max-width: 480px) {
+    .project-title {
+      font-size: 2rem;
+    }
+  
+    .project-boxes {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .project-box {
+      width: 100%; /* Take full width */
+      margin: 0 auto;
+    }
+  
+    .project-description {
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+/* CertificateDetail.css */
+
+.certificate-detail {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .full-certificate-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
