@@ -26,7 +26,7 @@ const Home = () => {
         <div className="profile-image-container">
           <div className="rotating-circle"></div>
           <img
-            src="/jaya.jpg" // Reference the image in the public folder
+            src="https://i.ibb.co/XzdBWNh/jaya.jpg" // Reference the image in the public folder
             alt="Profile"
             className="profile-image"
           />
